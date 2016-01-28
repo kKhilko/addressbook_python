@@ -26,8 +26,8 @@
       <file leaf-file-name="test_add_group.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_add_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.033259425">
-              <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.36585367">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
               <folding>
                 <element signature="e#24#82#0" expanded="true" />
               </folding>
@@ -309,6 +309,9 @@
     <history-entry file="Unittests_in_test_add_group - 2016.01.27 at 20h 44m 50s.xml">
       <configuration name="Unittests in test_add_group" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_add_group - 2016.01.27 at 21h 02m 03s.xml">
+      <configuration name="Unittests in test_add_group" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="63" width="1400" height="783" extended-state="0" />
@@ -343,8 +346,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test_add_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.033259425">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.36585367">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding>
             <element signature="e#24#82#0" expanded="true" />
           </folding>
