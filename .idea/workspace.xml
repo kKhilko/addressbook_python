@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de24a553-0daa-461a-af00-138525832a8a" name="Default" comment="" />
+    <list default="true" id="de24a553-0daa-461a-af00-138525832a8a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_add_group.py" afterPath="$PROJECT_DIR$/test_add_group.py" />
+    </list>
     <ignored path="python_training.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +26,8 @@
       <file leaf-file-name="test_add_group.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_add_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1330377">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.033259425">
+              <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
               <folding>
                 <element signature="e#24#82#0" expanded="true" />
               </folding>
@@ -298,6 +300,15 @@
     <history-entry file="Unittests_in_test_add_group - 2016.01.27 at 20h 11m 18s.xml">
       <configuration name="Unittests in test_add_group" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_add_group - 2016.01.27 at 20h 39m 30s.xml">
+      <configuration name="Unittests in test_add_group" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_add_group - 2016.01.27 at 20h 44m 03s.xml">
+      <configuration name="Unittests in test_add_group" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_add_group - 2016.01.27 at 20h 44m 50s.xml">
+      <configuration name="Unittests in test_add_group" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="63" width="1400" height="783" extended-state="0" />
@@ -332,8 +343,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test_add_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1330377">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.033259425">
+          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
           <folding>
             <element signature="e#24#82#0" expanded="true" />
           </folding>
