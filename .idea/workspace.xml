@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de24a553-0daa-461a-af00-138525832a8a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_add_group.py" afterPath="$PROJECT_DIR$/test_add_group.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_add_new_contact.py" afterPath="$PROJECT_DIR$/test_add_new_contact.py" />
     </list>
     <ignored path="python_training.iws" />

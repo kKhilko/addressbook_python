@@ -9,10 +9,10 @@ def app(request):
     request.addfinalizer(fixture.destroy)
     return fixture
 
-# def test_add_new_contact(app):
-#     app.login("admin", "secret")
-#     app.create_new_contact(Contact(firstname="test", lastname="test", company="abc"))
-#     app.logout()
+def test_add_new_contact(app):
+    app.login("admin", "secret")
+    app.create_new_contact(Contact(firstname="test", lastname="test", company="abc"))
+    app.logout()
 
 def test_add_new_empty_contact(app):
     app.login("admin", "secret")
