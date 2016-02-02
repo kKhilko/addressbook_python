@@ -3,12 +3,7 @@ from selenium.webdriver.firefox.webdriver import WebDriver
 import unittest
 from contact import Contact
 
-def is_alert_present(wd):
-    try:
-        wd.switch_to_alert().text
-        return True
-    except:
-        return False
+
 
 class test_add_new_contact(unittest.TestCase):
     def setUp(self):
@@ -17,14 +12,12 @@ class test_add_new_contact(unittest.TestCase):
     
     def test_add_new_contact(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, "admin", "secret")
-        self.create_new_contact(wd, Contact( firstname="test", lastname="test", company="abc"))
+        self.create_new_contact(wd, Contact(firstname="test", lastname="test", company="abc"))
         self.logout(wd)
 
     def test_add_new_empty_contact(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, "admin", "secret")
         self.create_new_contact(wd, Contact(firstname="", lastname="", company=""))
         self.logout(wd)
@@ -46,6 +39,7 @@ class test_add_new_contact(unittest.TestCase):
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
 
     def login(self, wd, username, password):
+        self.open_home_page(wd)
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys(username)

@@ -12,20 +12,14 @@ class test_add_group(unittest.TestCase):
     
     def test_add_group(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
-        self.open_group_page(wd)
         self.create_new_group(wd, Group(name="test", header="test_header", footer="test_footer"))
-        self.return_to_group_page(wd)
         self.logout(wd)
 
     def test_add_empty_group(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
-        self.open_group_page(wd)
         self.create_new_group(wd, Group(name="", header="", footer=""))
-        self.return_to_group_page(wd)
         self.logout(wd)
 
     def logout(self, wd):
@@ -35,6 +29,8 @@ class test_add_group(unittest.TestCase):
         wd.find_element_by_link_text("group page").click()
 
     def create_new_group(self, wd, group):
+        # open group page
+        self.open_group_page(wd)
         # init new group creation
         wd.find_element_by_name("new").click()
         # fill group form
@@ -46,11 +42,15 @@ class test_add_group(unittest.TestCase):
         wd.find_element_by_name("group_footer").send_keys(group.footer)
         # submit new group
         wd.find_element_by_name("submit").click()
+        #return to group page
+        self.return_to_group_page(wd)
 
     def open_group_page(self, wd):
         wd.find_element_by_link_text("groups").click()
 
     def login(self, wd, username, password):
+        #open home page
+        self.open_home_page(wd)
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys(username)
