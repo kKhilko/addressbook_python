@@ -1,4 +1,6 @@
 
+
+
 class ContactHelper:
     def __init__(self, app):
         self.app = app
@@ -16,3 +18,11 @@ class ContactHelper:
         wd.find_element_by_name("company").clear()
         wd.find_element_by_name("company").send_keys(contact.company)
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
+
+
+    def del_first_contact(self):
+        wd = self.app.wd
+        wd.find_element_by_link_text('home').click()
+        wd.find_element_by_xpath('(//input[@name="selected[]"])[1]').click()
+        wd.find_element_by_xpath('//input[@value="Delete"]').click()
+        wd.switch_to_alert().accept()
