@@ -1,4 +1,4 @@
-
+import time
 
 
 class ContactHelper:
@@ -8,21 +8,47 @@ class ContactHelper:
     def create_new(self, contact):
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
-        wd.find_element_by_name("firstname").click()
-        wd.find_element_by_name("firstname").clear()
-        wd.find_element_by_name("firstname").send_keys(contact.firstname)
-        wd.find_element_by_name("lastname").click()
-        wd.find_element_by_name("lastname").clear()
-        wd.find_element_by_name("lastname").send_keys(contact.lastname)
-        wd.find_element_by_name("company").click()
-        wd.find_element_by_name("company").clear()
-        wd.find_element_by_name("company").send_keys(contact.company)
+        self.complete_contact_form(contact)
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
 
+    def complete_contact_form(self, contact):
+        wd = self.app.wd
+        self.change_contact_field("firstname", contact.firstname)
+        self.change_contact_field("lastname", contact.lastname)
+        self.change_contact_field("company", contact.company)
+
+    def change_contact_field(self, contact_field, text):
+        wd = self.app.wd
+        if text is not None:
+            wd.find_element_by_name(contact_field).click()
+            wd.find_element_by_name(contact_field).clear()
+            wd.find_element_by_name(contact_field).send_keys(text)
 
     def del_first_contact(self):
         wd = self.app.wd
-        wd.find_element_by_link_text('home').click()
-        wd.find_element_by_xpath('(//input[@name="selected[]"])[1]').click()
+        self.click_HomeTab()
+        self.select_first_element()
+    # click Delete
         wd.find_element_by_xpath('//input[@value="Delete"]').click()
+    # confirm deleting
         wd.switch_to_alert().accept()
+
+    def select_first_element(self):
+        wd = self.app.wd
+        wd.find_element_by_xpath('(//input[@name="selected[]"])[1]').click()
+
+    def click_HomeTab(self):
+        wd = self.app.wd
+        wd.find_element_by_link_text('home').click()
+
+    def modify_first_contact(self, new_contact_data):
+        wd = self.app.wd
+        self.click_HomeTab()
+        self.select_first_element()
+    # click Edit first elem
+        wd.find_element_by_xpath('(//img[@title="Edit"])[1]').click()
+    # modify fields
+        self.complete_contact_form(new_contact_data)
+    # click update
+        wd.find_element_by_name("update").click()
+        time.sleep(5)

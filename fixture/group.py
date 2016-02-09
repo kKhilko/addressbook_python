@@ -21,7 +21,6 @@ class GroupHelper:
         self.return_to_group_page()
 
     def complete_group_form(self, group):
-        wd = self.app.wd
         self.change_field("group_name", group.name)
         self.change_field("group_header", group.header)
         self.change_field("group_footer", group.footer)
