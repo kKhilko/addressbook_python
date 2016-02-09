@@ -14,27 +14,51 @@ class GroupHelper:
         self.open_group_page()
         # init new group creation
         wd.find_element_by_name("new").click()
-        # fill group form
-        wd.find_element_by_name("group_name").click()
-        wd.find_element_by_name("group_name").send_keys(group.name)
-        wd.find_element_by_name("group_header").click()
-        wd.find_element_by_name("group_header").send_keys(group.header)
-        wd.find_element_by_name("group_footer").click()
-        wd.find_element_by_name("group_footer").send_keys(group.footer)
+        self.complete_group_form(group)
         # submit new group
         wd.find_element_by_name("submit").click()
         #return to group page
         self.return_to_group_page()
 
+    def complete_group_form(self, group):
+        wd = self.app.wd
+        self.change_field("group_name", group.name)
+        self.change_field("group_header", group.header)
+        self.change_field("group_footer", group.footer)
+
+    def change_field(self, field_name, text):
+        wd = self.app.wd
+        if text is not None:
+            wd.find_element_by_name(field_name).click()
+            wd.find_element_by_name(field_name).send_keys(text)
+
     def delete_first_group(self):
         wd = self.app.wd
         # open group page
         self.open_group_page()
-        wd.find_element_by_xpath('(//input[@name="selected[]"])[1]').click()
+        self.select_first_group()
+        # click Delete btn
         wd.find_element_by_name('delete').click()
-        #return to group page
         self.return_to_group_page()
 
     def return_to_group_page(self):
         wd = self.app.wd
         wd.find_element_by_link_text("group page").click()
+
+    def modify_first(self, new_group_data):
+        wd = self.app.wd
+        # open group page
+        self.open_group_page()
+        self.select_first_group()
+        # click Edit group
+        wd.find_element_by_name("edit").click()
+        # complete Edit form
+        self.complete_group_form(new_group_data)
+        # submit Edit form
+        wd.find_element_by_name("update").click()
+        self.return_to_group_page()
+
+
+    def select_first_group(self):
+        wd = self.app.wd
+        wd.find_element_by_xpath('(//input[@name="selected[]"])[1]').click()
