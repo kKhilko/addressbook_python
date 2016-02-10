@@ -51,4 +51,4 @@ class ContactHelper:
         self.complete_contact_form(new_contact_data)
     # click update
         wd.find_element_by_name("update").click()
-        time.sleep(5)
+
