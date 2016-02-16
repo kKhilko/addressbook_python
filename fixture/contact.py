@@ -1,5 +1,7 @@
 import time
 
+from model.contact import Contact
+
 
 class ContactHelper:
     def __init__(self, app):
@@ -58,3 +60,13 @@ class ContactHelper:
         wd = self.app.wd
         self.click_HomeTab()
         return len(wd.find_elements_by_xpath('//input[@name="selected[]"]'))
+
+    def get_list(self):
+        wd = self.app.wd
+        self.click_HomeTab()
+        contacts = []
+        for element in wd.find_elements_by_xpath("//tr[@name = 'entry']"):
+            lastname = element.find_element_by_xpath('//td[2]').text
+            id = element.find_element_by_name('selected[]').get_attribute('id')
+            contacts.append(Contact(lastname=lastname, id=id))
+        return contacts

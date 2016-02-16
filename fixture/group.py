@@ -32,6 +32,7 @@ class GroupHelper:
         wd = self.app.wd
         if text is not None:
             wd.find_element_by_name(field_name).click()
+            wd.find_element_by_name(field_name).clear()
             wd.find_element_by_name(field_name).send_keys(text)
 
     def delete_first_group(self):
@@ -79,3 +80,6 @@ class GroupHelper:
             id = element.find_element_by_name('selected[]').get_attribute('value')
             groups.append(Group(name=elemText, id=id))
         return groups
+
+
+
