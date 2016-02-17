@@ -22,6 +22,7 @@ class GroupHelper:
         wd.find_element_by_name("submit").click()
         #return to group page
         self.return_to_group_page()
+        self.group_cache = None
 
     def complete_group_form(self, group):
         self.change_field("group_name", group.name)
@@ -43,6 +44,7 @@ class GroupHelper:
         # click Delete btn
         wd.find_element_by_name('delete').click()
         self.return_to_group_page()
+        self.group_cache = None
 
     def return_to_group_page(self):
         wd = self.app.wd
@@ -60,7 +62,7 @@ class GroupHelper:
         # submit Edit form
         wd.find_element_by_name("update").click()
         self.return_to_group_page()
-
+        self.group_cache = None
 
     def select_first_group(self):
         wd = self.app.wd
@@ -71,15 +73,18 @@ class GroupHelper:
         self.open_group_page()
         return len(wd.find_elements_by_xpath('//input[@name="selected[]"]'))
 
+    group_cache = None
+
     def get_list(self):
-        wd = self.app.wd
-        self.open_group_page()
-        groups = []
-        for element in wd.find_elements_by_xpath('//span[@class ="group"]'):
-            elemText = element.text
-            id = element.find_element_by_name('selected[]').get_attribute('value')
-            groups.append(Group(name=elemText, id=id))
-        return groups
+        if self.group_cache is None:
+            wd = self.app.wd
+            self.open_group_page()
+            self.group_caches = []
+            for element in wd.find_elements_by_xpath('//span[@class ="group"]'):
+                elemText = element.text
+                id = element.find_element_by_name('selected[]').get_attribute('value')
+                self.group_caches.append(Group(name=elemText, id=id))
+        return list(self.group_caches)
 
 
 
