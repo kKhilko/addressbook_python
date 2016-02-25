@@ -1,4 +1,4 @@
-# Repository for Python training
+# Addressbook env
 
 Pip:
 sudo easy_install pip
