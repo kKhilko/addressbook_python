@@ -52,7 +52,7 @@ class ContactHelper:
 
     def click_HomeTab(self):
         wd = self.app.wd
-        if wd.current_url.endswith("/index.php") and len(wd.find_elements_by_xpath('//a[@title="Sort on “Last name”"]'))>0:
+        if wd.current_url.endswith("/index.php") and len(wd.find_elements_by_xpath("//a[contains(., 'Last name')]"))>0:
             return
         wd.find_element_by_link_text('home').click()
 
