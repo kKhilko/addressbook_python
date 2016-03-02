@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-from data.add_group import testdata
+from data.groups import testdata
 # from data.add_group import constant as testdata
 
 from model.group import Group
