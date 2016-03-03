@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de24a553-0daa-461a-af00-138525832a8a" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/add_group.py" afterPath="$PROJECT_DIR$/data/groups.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conftest.py" afterPath="$PROJECT_DIR$/conftest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/groups.json" afterPath="$PROJECT_DIR$/data/groups.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/groups.py" afterPath="$PROJECT_DIR$/data/groups.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generator/group.py" afterPath="$PROJECT_DIR$/generator/group.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_group_add.py" afterPath="$PROJECT_DIR$/test/test_group_add.py" />
     </list>
     <ignored path="python_training.iws" />
@@ -28,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/test/test_contact_add.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+              <caret line="29" column="1" selection-start-line="1" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -40,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/conftest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -48,33 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="target.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target.json">
+      <file leaf-file-name="contact.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/contact.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_contact_deleteFirst.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_contact_deleteFirst.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_contact_modify.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_contact_modify.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+            <state vertical-scroll-proportion="-0.12412178">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -94,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/test/test_group_add.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -104,9 +85,9 @@
         <entry file="file://$PROJECT_DIR$/generator/group.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+              <caret line="41" column="42" selection-start-line="35" selection-start-column="0" selection-end-line="41" selection-end-column="42" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#17#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,20 +96,42 @@
       <file leaf-file-name="groups.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/groups.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="groups.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="groups.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/groups.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7982262">
-              <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/contact.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
               <folding>
-                <element signature="e#26#39#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/contact.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="4" selection-start-line="15" selection-start-column="2" selection-end-line="18" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,11 +177,13 @@
         <option value="$PROJECT_DIR$/fixture/contact.py" />
         <option value="$PROJECT_DIR$/fixture/application.py" />
         <option value="$PROJECT_DIR$/target.json" />
-        <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/data/add_group.py" />
-        <option value="$PROJECT_DIR$/test/test_group_add.py" />
-        <option value="$PROJECT_DIR$/generator/group.py" />
         <option value="$PROJECT_DIR$/data/groups.py" />
+        <option value="$PROJECT_DIR$/test/test_group_add.py" />
+        <option value="$PROJECT_DIR$/conftest.py" />
+        <option value="$PROJECT_DIR$/generator/group.py" />
+        <option value="$PROJECT_DIR$/data/contact.py" />
+        <option value="$PROJECT_DIR$/generator/contact.py" />
       </list>
     </option>
   </component>
@@ -307,7 +312,7 @@
       <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.group">
+  <component name="RunManager" selected="Python.contact">
     <configuration default="false" name="group" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -321,32 +326,8 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_training" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generator/group.py" />
-      <option name="PARAMETERS" value="-n 10 -f data/test.json" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="py.test in test" type="tests" factoryName="py.test" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python_training" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="$PROJECT_DIR$/test" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="py.test in test_group_add.py" type="tests" factoryName="py.test" temporary="true">
@@ -419,6 +400,23 @@
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="contact" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python_training" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generator/contact.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -545,18 +543,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.group" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_group_add.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_contact_add.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_group_delete.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_group_add.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_contact_add.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_group_delete.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python.contact" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.group" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_group_add.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_group_delete.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_contact_add.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.contact" />
+        <item index="1" class="java.lang.String" itemvalue="Python.group" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_group_add.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_group_delete.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_contact_add.py" />
       </list>
     </recent_temporary>
   </component>
@@ -583,17 +581,17 @@
     <history-entry file="py_test_in_test_group_add_py - 2016.03.01 at 19h 26m 56s.xml">
       <configuration name="py.test in test_group_add.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_group_delete_py - 2016.02.25 at 19h 41m 11s.xml">
-      <configuration name="py.test in test_group_delete.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_group_add_py - 2016.03.01 at 20h 19m 27s.xml">
+      <configuration name="py.test in test_group_add.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_group_delete_py - 2016.02.25 at 19h 42m 09s.xml">
-      <configuration name="py.test in test_group_delete.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_group_add_py - 2016.03.01 at 20h 23m 24s.xml">
+      <configuration name="py.test in test_group_add.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_group_delete_py - 2016.02.25 at 19h 43m 50s.xml">
-      <configuration name="py.test in test_group_delete.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_group_add_py - 2016.03.01 at 20h 28m 51s.xml">
+      <configuration name="py.test in test_group_add.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_group_delete_py - 2016.02.25 at 19h 46m 52s.xml">
-      <configuration name="py.test in test_group_delete.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_group_add_py - 2016.03.03 at 08h 11m 19s.xml">
+      <configuration name="py.test in test_group_add.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test_group_delete_py - 2016.02.29 at 15h 45m 37s.xml">
       <configuration name="py.test in test_group_delete.py" configurationId="tests" />
@@ -646,22 +644,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fixture/group.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/group.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="26" selection-start-line="17" selection-start-column="4" selection-end-line="21" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_contact_add.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1015,48 +997,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_group_add.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/groups.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_contact_deleteFirst.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="40" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_contact_add.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1077,23 +1023,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_group_add.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_contact_add.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="1" selection-start-line="1" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/groups.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/groups.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="4" selection-start-line="15" selection-start-column="2" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/generator/group.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <caret line="41" column="42" selection-start-line="35" selection-start-column="0" selection-end-line="41" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/groups.py">
+    <entry file="file://$PROJECT_DIR$/data/contact.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7982262">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-          <folding>
-            <element signature="e#26#39#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-0.12412178">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
