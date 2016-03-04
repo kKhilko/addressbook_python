@@ -16,7 +16,7 @@ except getopt.GetoptError as err:
     getopt.usage()
     sys.exit(2)
 
-# analys for parametrs
+# analyze for parameters
 n = 5
 f = "data/contact.json"
 
@@ -25,7 +25,7 @@ for o, a in opts:
         n = int(a)
     elif o == "-f":
         f = a
-
+# generate random value
 def random_string(prefix, maxlen):
     symbols = string.ascii_letters + string.digits + " "*10
     return prefix + "".join(random.choice(symbols)for i in range(random.randrange(maxlen)))

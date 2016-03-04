@@ -31,7 +31,4 @@ def test_modify_lastname(app):
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
 
 
-# def test_modify_company(app):
-#     if app.contact.count() == 0:
-#         app.contact.create_new(Contact(firstname="test_new_contact"))
-#     app.contact.modify_first_contact(Contact(company="new_company"))
+
