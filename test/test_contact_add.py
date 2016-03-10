@@ -2,12 +2,16 @@
 from model.contact import Contact
 
 
-def test_contact_add_new(app, json_contact):
+def test_contact_add_new(app, db, json_contact):
     contact = json_contact
-    old_contacts = app.contact.get_list()
+    old_contacts = db.get_contact_list()
     app.contact.create_new(contact)
-    assert len(old_contacts)+1 == app.contact.count()
-    new_contacts = app.contact.get_list()
+    new_contacts = db.get_contact_list()
     old_contacts.append(contact)
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
+    ui_list = app.contact.get_list()
+    def clean(contact):
+        return Contact(firstname=contact.firstname.strip(), lastname=contact.lastname.strip())
+    db_list = map(clean, db.get_contact_list())
+    assert sorted(ui_list, key=Contact.id_or_max) == sorted(db_list, key=Contact.id_or_max)
 
