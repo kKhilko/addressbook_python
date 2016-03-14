@@ -5,6 +5,7 @@ from model.contact import Contact
 def test_contact_add_new(app, db, json_contact):
     contact = json_contact
     old_contacts = db.get_contact_list()
+    print(old_contacts)
     app.contact.create_new(contact)
     new_contacts = db.get_contact_list()
     old_contacts.append(contact)
