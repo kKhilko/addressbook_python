@@ -122,4 +122,12 @@ class GroupHelper:
         return list(self.group_caches)
 
 
-
+    def find_group_by_name(self, group_name):
+        wd = self.app.wd
+        self.open_group_page()
+        selected_group = []
+        for group in wd.find_elements_by_xpath('//span[@class ="group"]'):
+            if group_name in group.text:
+                group_id = group.find_element_by_name('selected[]').get_attribute('value')
+                selected_group.append(group_id)
+        return selected_group[0]

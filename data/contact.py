@@ -9,7 +9,7 @@ def random_string(prefix, maxlen):
 
 testdata = [
     Contact(firstname="test_new_contact", lastname="test", company="abc"),
-    Contact(firstname="", lastname="", company="")
+    # Contact(firstname="", lastname="", company="")
 ]
 
 # # execute 1 simple empty test and 5 tests with random data

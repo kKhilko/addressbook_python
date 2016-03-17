@@ -16,6 +16,17 @@ class ContactHelper:
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
         self.contact_cache = None
 
+    def create_new_with_add_to_group(self, contact):
+        wd = self.app.wd
+        wd.find_element_by_link_text("add new").click()
+        self.complete_contact_form(contact)
+        group = random.choice(wd.find_elements_by_xpath('//select[@name="new_group"]//option[not (@value = "[none]")]'))
+        group_name= group.text
+        group.click()
+        wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
+        self.contact_cache = None
+        return group_name
+
     def complete_contact_form(self, contact):
         wd = self.app.wd
         self.change_contact_field("firstname", contact.firstname)
@@ -181,3 +192,17 @@ class ContactHelper:
         all_contact = wd.find_elements_by_name('entry')
         index = random.randrange(len(all_contact))
         return index
+
+    def get_contact_id_by_name(self, firstname):
+        wd = self.app.wd
+        self.click_HomeTab()
+        contact_id = []
+        firstname_field = wd.find_elements_by_xpath('//tr[@name="entry"]//td[3]')
+        for c in firstname_field:
+            if firstname in c.text:
+                index=firstname_field.index(c)
+                row = wd.find_elements_by_xpath('//tr[@name="entry"]')[index]
+                id = row.find_element_by_name('selected[]').get_attribute('value')
+                contact_id.append(id)
+        return contact_id[0]
+

@@ -1,5 +1,5 @@
 import mysql.connector
-
+from fixture.orm import ORMFixture
 from model.contact import Contact
 from model.group import Group
 
@@ -38,6 +38,16 @@ class DbFixture:
             cursor.close()
         return list
 
+    def verify_address_in_group_list(self, group_id):
+        db = ORMFixture(host="127.0.0.1", name="addressbook", user="root", password="")
+        try:
+            contacts_in_group = []
+            l = db.get_contacts_in_group(Group(id=group_id))
+            for item in l:
+                contacts_in_group.append(item)
+            return contacts_in_group
+        finally:
+            pass
 
     def destroy(self):
         self.connection.close()
